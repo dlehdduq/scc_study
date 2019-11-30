@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+//헤드 부분 스크립트는 트랙킹 코드 또는 불러오는 코드위주로 !!
+</script>
+</head>
+<body>
+
+	<button onclick="forloop()">for문 버튼</button>
+	<button onclick="add()">ADD버튼</button>
+	<button onclick="backforloop()">Back for문 버튼</button>
+	<button onclick="check()">딸기 체크 버튼</button>
+
+	<script>
+
+		var a = 1;
+		let a_list = ['사과','감','감','배','포도','포도','딸기','포도','감','수박','딸기']
+		let count = 0;
+
+		function check(){
+			for(var i=0;i<a_list.length;i++){
+				if(a_list[i]=="딸기"){
+					count+=1;
+				}
+			}
+			console.log("딸기는 ",count);
+		}
+
+		function forloop(){
+
+			console.log("a는 ",a)
+			for(var i=1;i<=a;i++){
+				console.log(i)
+			}
+		}
+		function backforloop(){
+
+			console.log("a는 ",a)
+			for(var i=a;i<a;i--){
+				console.log(i)
+			}
+		}
+		function add() {
+			console.log("기존 a : ",a,"하나 증감 함")
+			a=a+1
+		}
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+수업 내용 넣기 
+
+자주 사용하는 jquery 함수
+html
+append
+show
+hide
+css
+
+
+
+값이 별도로 없는 태그들 
+예를 들어 
+  (1) P 태그의 경우 $("p").text()를 쓸경우 해당 태그 사이에 내용이 들어간다!
+  (2) 태그 사이에 다른 html을 넣고 싶을 때에는 $("p").html('<p></p>') ==> html은 마지막에 있는 내용만 씀
+  (3) 태그 사시에 다른 html을 추가하고 싶을 때에는 $("p").append('<p></p>') 
+
+
+css를 건들떄는 class를 사용
+jqeury를 사용할떄는 id를 사용
+
+
+Create --> POST (body << data)
+Read   --> GET  (url)
+Update --> UPDATE (body)
+Delete --> DELETE (body)
+
+민감하지 않은 정보만 URL 뒤에 붙여서 사용!
+즉 GET방식은 개인정보! 민감정보! 등.. 사용 X
+Get --> ? 로 시작 http:///user.com?id=1&password=123123
+
+POst --> form 태그의 method="post"로 submit
+         name과 value가 매칭되서 전달!
+
+
+404 error 페이지가 없다.
+405 서버에서 해당 방식을 허락 X

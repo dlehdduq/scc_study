@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>예제연습</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<!-- 구글폰트 -->
+	<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		* {
+			font-family: 'Jua', sans-serif;
+		}
+
+		.container{
+			width:800px;
+			margin: auto;
+		}
+
+		.jumbotron{
+			background-color: white;
+		}
+
+		.jumbotron > .container{
+			padding-left: 0;
+		}
+
+		.title-container{
+		}
+
+		.order-container{
+			width: 500px;
+
+		}
+
+		.order-container > .btn {
+			width: 800px;
+			display:flex;
+			justify-content: center;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<img src="1.png" class="img-fluid" alt="Responsive image">
+		
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-5" style="display: inline-block;">스파르타 코딩클럽</h1>
+				<h5 style="display: inline-block;">의지만 있다면 참여 환영</h5>
+				<p class="lead">경험이 없는 입문자들을 위해 고안된 수업 입니다.
+					짧고 굵게, 나만의 웹서비스를 만들면서 기본기를 다집니다.
+						기본 다지기(4주), 팀 프로젝트 완성(4주) 코스입니다.
+					작더라도 반드시 프로젝트를 완성하는 것이 목표입니다.
+
+				</p>
+			</div>
+		</div>
+		
+		<div class="order-container">
+			<h1 class="display-5">신청하기</h1>
+			
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="inputGroup-sizing-default">신청자 성함</span>
+				</div>
+				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+			</div>
+
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<label class="input-group-text" for="inputGroupSelect01">남은 수량</label>
+				</div>
+				<select class="custom-select" id="inputGroupSelect01">
+					<option selected>빈 자리</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+			</div>
+
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+				</div>
+				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+			</div>
+
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+				</div>
+				<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+			</div>
+			
+			<div class="btn"><button class="btn btn-primary">신청하기</button></div>
+			
+		</div>
+	</div>
+</body>
+
+</html>
