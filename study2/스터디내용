@@ -6,8 +6,7 @@ append
 show
 hide
 css
-
-
+attr : 태그의 속성을 다루기
 
 값이 별도로 없는 태그들 
 예를 들어 
@@ -35,3 +34,23 @@ POst --> form 태그의 method="post"로 submit
 
 404 error 페이지가 없다.
 405 서버에서 해당 방식을 허락 X
+
+자바스크립트에서 append 이용할떄 많은 줄을 이용할때는 \ 를 이용해서 줄바꿈!!
+
+
+Get방식으로 보낼떄!
+req.params  --> 값만 보낼때 
+req.queryString --> 키벨류 쌍으로 보낼때 
+
+함수의 return; 이 있을경우에는 함수를 더 진행 X
+
+아래의 코드가 있으면 무조건!! 먼저 실행됨(무조건 1등)
+$(documnet).ready(function(){
+	
+})
+
+
+아래의 것도 있으면 먼저 실행됨(같이 있으면 두번째로 실행..)
+window.onload = function(){
+	
+}
